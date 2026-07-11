@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
     <title>My Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased" style="color-scheme: light; overflow-x: hidden;">
 
-    <main class="max-w-4xl mx-auto my-12 p-8 bg-white shadow-lg rounded-xl">
+    <main class="mx-auto my-4 max-w-4xl rounded-xl bg-white p-4 shadow-lg sm:my-12 sm:p-8">
         
         <header class="border-b border-slate-200 pb-6 mb-6">
             <button
                 type="button"
                 data-tab="about"
-                class="tab-trigger flex w-full items-center space-x-4 rounded-lg p-2 text-left transition-colors hover:bg-slate-100 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                class="tab-trigger flex w-full flex-col items-start space-y-4 rounded-lg p-2 text-left transition-colors hover:bg-slate-100 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0"
             >
                 <img
                     src="images/profile_picture.JPG"
                     alt="Profile Picture"
-                    class="w-40 h-40 rounded-full object-cover shadow-md"
+                    class="h-24 w-24 rounded-full object-cover shadow-md sm:h-40 sm:w-40"
                 />
                 <div>
                     <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Daniel Tipple</h1>
@@ -30,17 +31,17 @@
 
         <!-- Tabbed Section -->
         <section class="mt-8">
-            <div class="flex space-x-2 border-b border-slate-200">
-                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-900 bg-slate-100 border-b-2 border-indigo-600" data-tab="experience">
+            <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-2">
+                <button class="tab-btn rounded-t-lg border-b-2 border-indigo-600 bg-slate-100 px-3 py-2 text-sm font-medium text-slate-900 sm:px-4 sm:text-base" data-tab="experience">
                     Experience
                 </button>
-                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-600" data-tab="education">
+                <button class="tab-btn rounded-t-lg px-3 py-2 text-sm font-medium text-slate-600 sm:px-4 sm:text-base" data-tab="education">
                     Education
                 </button>
-                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-600" data-tab="projects">
+                <button class="tab-btn rounded-t-lg px-3 py-2 text-sm font-medium text-slate-600 sm:px-4 sm:text-base" data-tab="projects">
                     Projects
                 </button>
-                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-600" data-tab="about">
+                <button class="tab-btn rounded-t-lg px-3 py-2 text-sm font-medium text-slate-600 sm:px-4 sm:text-base" data-tab="about">
                     About
                 </button>
             </div>
@@ -49,8 +50,8 @@
             <div id="experience" class="tab-panel mt-4">
                 <h2 class="text-2xl font-semibold border-b border-slate-200 pb-2 mb-4">Experience</h2>
                 <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
-                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
-                        <div class="flex-1">
+                    <summary class="flex cursor-pointer list-none flex-col items-start justify-between gap-4 sm:flex-row">
+                        <div class="flex-1 min-w-0">
                             <h3 class="text-lg font-semibold text-slate-800">Tech Intern</h3>
                             <p class="text-sm text-slate-500">Axis Communications | Mar 2026 - Present</p>
                             <p class="mt-2 text-slate-600">
@@ -74,8 +75,8 @@
                 </details>
                 
                 <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
-                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
-                        <div class="flex-1">
+                    <summary class="flex cursor-pointer list-none flex-col items-start justify-between gap-4 sm:flex-row">
+                        <div class="flex-1 min-w-0">
                             <h3 class="text-lg font-semibold text-slate-800">Interrogation Soldier (Förhörssoldat) - Tolkskolan</h3>
                             <p class="text-sm text-slate-500">Swedish Armed Forces | Aug 2023 - Jul 2024</p>
                             <p class="mt-2 text-slate-600">
@@ -99,8 +100,8 @@
                 </details>
 
                 <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
-                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
-                        <div class="flex-1">
+                    <summary class="flex cursor-pointer list-none flex-col items-start justify-between gap-4 sm:flex-row">
+                        <div class="flex-1 min-w-0">
                             <h3 class="text-lg font-semibold text-slate-800">Technical Intern</h3>
                             <p class="text-sm text-slate-500">Ericsson | Aug 2022 - Dec 2022</p>
                             <p class="mt-2 text-slate-600">
@@ -126,8 +127,8 @@
                 </details>
 
                 <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
-                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
-                        <div class="flex-1">
+                    <summary class="flex cursor-pointer list-none flex-col items-start justify-between gap-4 sm:flex-row">
+                        <div class="flex-1 min-w-0">
                             <h3 class="text-lg font-semibold text-slate-800">Handball Referee</h3>
                             <p class="text-sm text-slate-500">Handbollsförbundet Öst | Sep 2020 - Sep 2022</p>
                             <p class="mt-2 text-slate-600">
@@ -151,8 +152,8 @@
                 </details>
 
                 <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
-                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
-                        <div class="flex-1">
+                    <summary class="flex cursor-pointer list-none flex-col items-start justify-between gap-4 sm:flex-row">
+                        <div class="flex-1 min-w-0">
                             <h3 class="text-lg font-semibold text-slate-800">Private Tutor</h3>
                             <p class="text-sm text-slate-500">Studybuddy | Sep 2020 - Jun 2021</p>
                             <p class="mt-2 text-slate-600">
@@ -181,8 +182,8 @@
             <div id="education" class="tab-panel mt-4 hidden">
                 <h2 class="text-2xl font-semibold border-b border-slate-200 pb-2 mb-4">Education</h2>
                 <div class="mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
-                    <div class="flex items-start justify-between gap-4">
-                        <div class="flex-1">
+                    <div class="flex flex-col items-start justify-between gap-4 sm:flex-row">
+                        <div class="flex-1  min-w-0">
                             <h3 class="text-lg font-semibold text-slate-800">Engineering Physics</h3>
                             <p class="text-sm text-slate-500">Lund University | Aug 2024 - Jun 2029</p>
                             <p class="mt-2 text-slate-600">
