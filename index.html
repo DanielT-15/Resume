@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <main class="max-w-4xl mx-auto my-12 p-8 bg-white shadow-lg rounded-xl">
+        
+        <header class="border-b border-slate-200 pb-6 mb-6">
+            <button
+                type="button"
+                data-tab="about"
+                class="tab-trigger flex w-full items-center space-x-4 rounded-lg p-2 text-left transition-colors hover:bg-slate-100 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+                <img
+                    src="images/profile_picture.JPG"
+                    alt="Profile Picture"
+                    class="w-40 h-40 rounded-full object-cover shadow-md"
+                />
+                <div>
+                    <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Daniel Tipple</h1>
+                    <p class="text-lg text-indigo-600 font-medium mt-1">Engineering Physics student & Software Engineer</p>
+                </div>
+            </button>
+        </header>
+
+        <!-- Tabbed Section -->
+        <section class="mt-8">
+            <div class="flex space-x-2 border-b border-slate-200">
+                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-900 bg-slate-100 border-b-2 border-indigo-600" data-tab="experience">
+                    Experience
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-600" data-tab="education">
+                    Education
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-600" data-tab="projects">
+                    Projects
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-t-lg font-medium text-slate-600" data-tab="about">
+                    About
+                </button>
+            </div>
+
+            <!-- Experience -->
+            <div id="experience" class="tab-panel mt-4">
+                <h2 class="text-2xl font-semibold border-b border-slate-200 pb-2 mb-4">Experience</h2>
+                <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
+                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-800">Tech Intern</h3>
+                            <p class="text-sm text-slate-500">Axis Communications | Mar 2026 - Present</p>
+                            <p class="mt-2 text-slate-600">
+                                Software development and data collection to assist in the development of Axis' radar systems.
+                            </p>
+                        </div>
+
+                        <img
+                            src="images/axis_logo.jpeg"
+                            alt="Axis Communications"
+                            class="w-32 h-24 object-cover rounded-lg shadow-sm"
+                        />
+                    </summary>
+
+                    <div class="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
+                        <ul class="ml-6 list-disc space-y-1">
+                            <li>Worked on radar-related development tasks.</li>
+                            <li>Supported data collection and software workflows.</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
+                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-800">Interrogation Soldier (Förhörssoldat) - Tolkskolan</h3>
+                            <p class="text-sm text-slate-500">Swedish Armed Forces | Aug 2023 - Jul 2024</p>
+                            <p class="mt-2 text-slate-600">
+                                Education in Russian language and HUMINT interrogation strategies.
+                            </p>
+                        </div>
+
+                        <img
+                            src="images/tolkskolan_logo.jpeg"
+                            alt="Tolkskolan"
+                            class="w-32 h-24 object-cover rounded-lg shadow-sm"
+                        />
+                    </summary>
+
+                    <div class="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
+                        <ul class="ml-6 list-disc space-y-1">
+                            <li>Leadership experience from rotations as group and plutoon leader</li>
+                            <li>Grade: 3-3</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
+                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-800">Technical Intern</h3>
+                            <p class="text-sm text-slate-500">Ericsson | Aug 2022 - Dec 2022</p>
+                            <p class="mt-2 text-slate-600">
+                                Worked on Ericsson’s flagship education program, "Connect to Learn". A program that provides technology education for children in lower income areas and the developing world.
+                            </p>
+                        </div>
+
+                        <img
+                            src="images/ericsson_logo.png"
+                            alt="Ericsson"
+                            class="w-48 h-20 object-cover rounded-lg shadow-sm"
+                        />
+                    </summary>
+
+                    <div class="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
+                        <ul class="ml-6 list-disc space-y-1">
+                            <li>Developed courses on IoT (Internet of Things), and 5G.</li>
+                            <li>Performed bug testing on educational resources.</li>
+                            <li>Created and proof-read documentation.</li>
+                            <li>Led a workshop for course instructors.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
+                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-800">Handball Referee</h3>
+                            <p class="text-sm text-slate-500">Handbollsförbundet Öst | Sep 2020 - Sep 2022</p>
+                            <p class="mt-2 text-slate-600">
+                                Level 5 district referee. Experience up to U19 and Swedish Championships for U16.
+                            </p>
+                        </div>
+
+                        <img
+                            src="images/handbollsforbundet_ost.jpeg"
+                            alt="Handbollsförbundet Öst"
+                            class="w-48 h-20 object-cover rounded-lg shadow-sm"
+                        />
+                    </summary>
+
+                    <div class="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
+                        <ul class="ml-6 list-disc space-y-1">
+                            <li>Was one of two referees nominated from my club to become district referees.</li>
+                            <li>Refereed in various tournaments and competitions such as the Swedish U16 Championship, division 1 U16, Aranäs Open and Lidingö Cup.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="group mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
+                    <summary class="flex cursor-pointer list-none items-start justify-between gap-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-800">Private Tutor</h3>
+                            <p class="text-sm text-slate-500">Studybuddy | Sep 2020 - Jun 2021</p>
+                            <p class="mt-2 text-slate-600">
+                                Provided one-on-one tutoring in mathematics, science and language to students from elementary to high school level.
+                            </p>
+                        </div>
+
+                        <img
+                            src="images/studybuddy.avif"
+                            alt="Studybuddy"
+                            class="w-48 h-20 object-cover rounded-lg shadow-sm"
+                        />
+                    </summary>
+
+                    <div class="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
+                        <ul class="ml-6 list-disc space-y-1">
+                            <li>Tutored four students varying from 12 to 15 years old.</li>
+                        </ul>
+                    </div>
+                </details>
+
+            </div>
+
+
+            <!-- Education -->
+            <div id="education" class="tab-panel mt-4 hidden">
+                <h2 class="text-2xl font-semibold border-b border-slate-200 pb-2 mb-4">Education</h2>
+                <div class="mb-4 rounded-lg border-b border-slate-200 p-2 transition-colors hover:bg-slate-50">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-800">Engineering Physics</h3>
+                            <p class="text-sm text-slate-500">Lund University | Aug 2024 - Jun 2029</p>
+                            <p class="mt-2 text-slate-600">
+                                Currently in the third year of the engineering physics program.
+                            </p>
+                            <p class="mt-2 text-slate-600">
+                                Completed courses in:
+                            </p>
+                        </div>
+
+                        <img
+                            src="images/fsek.jpeg"
+                            alt="FSEK"
+                            class="w-24 h-24 object-cover rounded-lg shadow-sm"
+                        />
+                    </div>
+
+                    <div class="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
+                        <ul class="ml-6 list-disc space-y-1">
+                            <li>Mathematics: Multivariable Calculus, Linear Algebra, Statistics, Systems and Transforms, Complex Analysis, Continual Systems(Applied Mathematics)</li>
+                            <li>Physics: Mechanics, Thermodynamics, Quantum Mechanics, Electronics, Optics</li>
+                            <li>Computer Science: Programming base course (python), programming continuation course (Java)</li>
+                            <li>Other: Russian 1 & 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects" class="tab-panel mt-4 hidden">
+                <h2 class="text-2xl font-semibold">Projects</h2>
+                <p class="text-slate-600 mt-2">Add your project details here.</p>
+            </div>
+
+            <div id="about" class="tab-panel mt-4 hidden">
+                <h2 class="text-2xl font-semibold">Contact</h2>
+                <p class="text-slate-600 mt-2">
+                +46722318698<br>
+                danieltipple4@gmail.com<br>
+                LinkedIn: <a href="https://www.linkedin.com/in/daniel-tipple-236748216/" class="text-indigo-600 hover:underline">https://www.linkedin.com/in/danieltipple/</a>
+                </p>
+                <h2 class="text-2xl font-semibold mt-6">About Me</h2>
+                <p class="text-slate-600 mt-2">
+                I’m Daniel, a 22 year old engineering physics student from Stockholm. I was born in London to English parents, but moved to Sweden at three years old, so I have dual citizenship and am bilingual. Maths and science have always been my main interest in school and I used to dream about becoming a rocket scientist (still haven’t given up on that dream). I am an ambitious student, with a GPA of over 4.0 (max 5.0) at one of the most difficult programs in the country and have started working part time on the side at Axis Communications, a leading tech company based in Lund.<br>
+                </p>
+                <p class="text-slate-600 mt-2">
+                Apart from university, I enjoy sports, playing handball until the age of 18. Then I completed my military service at Försvarets Tolkskola, an incredibly unique and character building experience which pushed me further than I thought possible both physically and mentally. Today I play in a local volleyball team in Lund.
+                </p>
+                <p class="text-slate-600 mt-2">
+                I want to learn from the best in order to maximize my potential. In the future I would also love to give back to people less fortunate than myself and work tirelessly to harness my skillset, and the opportunity I’ve been given to make a difference.
+                </p>
+            </div>
+        </section>
+        
+        <script>
+            const buttons = document.querySelectorAll('.tab-btn');
+            const triggers = document.querySelectorAll('.tab-trigger');
+            const panels = document.querySelectorAll('.tab-panel');
+
+            function showTab(tabName) {
+                buttons.forEach(btn => {
+                    const active = btn.dataset.tab === tabName;
+                    btn.classList.toggle('bg-slate-100', active);
+                    btn.classList.toggle('border-b-2', active);
+                    btn.classList.toggle('border-indigo-600', active);
+                    btn.classList.toggle('text-slate-900', active);
+                    btn.classList.toggle('text-slate-600', !active);
+                });
+
+                panels.forEach(panel => panel.classList.add('hidden'));
+                const targetPanel = document.getElementById(tabName);
+                if (targetPanel) {
+                    targetPanel.classList.remove('hidden');
+                }
+            }
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => showTab(button.dataset.tab));
+            });
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', () => showTab(trigger.dataset.tab));
+            });
+        </script>
+
+    </main>
+
+</body>
+</html>
